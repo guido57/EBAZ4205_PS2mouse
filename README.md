@@ -14,7 +14,7 @@ The result will be an EBAZ4205:
     * with a serial console connected to the J7 connector of EBAZ4205 (serial)
     * with a SSH server connectable with any SSH client and/or WinSCP  
     * any application running on a linux console
-    * with a HDMI video out port (640x480 or 800x600 or 1080x720). See the other project [](https://github.com/guido57/EBAZ4205_HDMI)
+    * with a HDMI video out port (640x480 or 800x600 or 1080x720). See the other project [EBAZ4205_HDMI](https://github.com/guido57/EBAZ4205_HDMI)
 
 ## Block Diagram
 ![](./docs/PS2%20mouse%20Block%20Diagram.png)
