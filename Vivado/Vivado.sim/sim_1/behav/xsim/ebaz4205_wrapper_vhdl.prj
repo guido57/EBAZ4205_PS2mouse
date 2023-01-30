@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_conv_funs_pkg.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_proc_common_pkg.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_ipif_pkg.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_family_support.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_family.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_address_decoder.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_slave_attachment.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_axi_lite_ipif.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_axi_clk_config.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/sim/ebaz4205_proc_sys_reset_0_0.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ipshared/1f29/src/debounce.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ipshared/1f29/src/ps2_transceiver.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ipshared/1f29/src/ps2_mouse.vhd" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/sim/ebaz4205_ps2_mouse_0_0.vhd" \
+
+# Do not sort compile order
+nosort

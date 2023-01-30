@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ipshared/62b6" --include "../../../../EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" --include "../../../../EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ipshared/3007/hdl" --include "D:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
+"../../../../EBAZ4205_eth_ps2mouse.srcs/sources_1/new/counter26.v" \
+"../../../../EBAZ4205_eth_ps2mouse.srcs/sources_1/new/DivideBy2N.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_counter26_0_0/sim/ebaz4205_counter26_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_0_0/sim/ebaz4205_xlslice_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_1_0/sim/ebaz4205_xlslice_1_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlconcat_0_0/sim/ebaz4205_xlconcat_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_0/sim/ebaz4205_DivideBy2N_0_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
+"../../../../EBAZ4205_eth_ps2mouse.ip_user_files/bd/ebaz4205/sim/ebaz4205.v" \
+"../../../../EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

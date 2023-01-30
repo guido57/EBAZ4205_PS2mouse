@@ -1,0 +1,620 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 24 09:55:32 2023
+# Process ID: 59388
+# Current directory: D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1
+# Command line: vivado.exe -log ebaz4205_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ebaz4205_clk_wiz_0_0.tcl
+# Log file: D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/ebaz4205_clk_wiz_0_0.vds
+# Journal file: D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-SQGSJV7, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 33741 MB
+#-----------------------------------------------------------
+source ebaz4205_clk_wiz_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/guido/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top ebaz4205_clk_wiz_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57492
+CRITICAL WARNING: [Synth 8-976] clk_out66M_ebaz4205_clk_wiz_0_0 has already been declared [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:105]
+CRITICAL WARNING: [Synth 8-2654] second declaration of clk_out66M_ebaz4205_clk_wiz_0_0 ignored [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:105]
+INFO: [Synth 8-994] clk_out66M_ebaz4205_clk_wiz_0_0 is declared here [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:104]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1419.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ebaz4205_clk_wiz_0_0' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_axi_clk_config' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_axi_clk_config.vhd:177]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_axi_lite_ipif' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_axi_lite_ipif.vhd:245]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_slave_attachment' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_slave_attachment.vhd:236]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 11 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_address_decoder' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_address_decoder.vhd:186]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 6 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b00000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized0' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized0' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized1' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized1' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized2' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized2' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized3' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized3' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized4' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized4' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized5' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized5' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized6' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized6' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized7' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized7' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized8' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+	Parameter C_AB bound to: 0 - type: integer 
+	Parameter C_AW bound to: 11 - type: integer 
+	Parameter C_BAR bound to: 11'b01000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_pselect_f__parameterized8' (1#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_address_decoder' (2#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_address_decoder.vhd:186]
+INFO: [Synth 8-226] default block is never used [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_slave_attachment.vhd:438]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_slave_attachment' (3#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_slave_attachment.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_axi_lite_ipif' (4#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_axi_lite_ipif.vhd:245]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'ebaz4205_clk_wiz_0_0_clk_wiz_drp' declared at 'd:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:115' bound to instance 'CLK_CORE_DRP_I' of component 'ebaz4205_clk_wiz_0_0_clk_wiz_drp' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_axi_clk_config.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_clk_wiz_drp' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:153]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter CE_NUMBERS bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'ebaz4205_clk_wiz_0_0_clk_wiz' declared at 'd:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:68' bound to instance 'clk_inst' of component 'ebaz4205_clk_wiz_0_0_clk_wiz' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:553]
+INFO: [Synth 8-6157] synthesizing module 'ebaz4205_clk_wiz_0_0_clk_wiz' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (5#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 15.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (6#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:63510]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [D:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'ebaz4205_clk_wiz_0_0_clk_wiz' (8#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz.v:68]
+	Parameter S1_CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT0_DIVIDE bound to: 15 - type: integer 
+	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT0_FRAC bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT2_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT2_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT3_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT3_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT4_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT4_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT5_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT5_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
+INFO: [Synth 8-3491] module 'ebaz4205_clk_wiz_0_0_mmcm_drp' declared at 'd:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:47' bound to instance 'mmcm_drp_inst' of component 'ebaz4205_clk_wiz_0_0_mmcm_drp' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:571]
+INFO: [Synth 8-6157] synthesizing module 'ebaz4205_clk_wiz_0_0_mmcm_drp' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:47]
+	Parameter S1_CLKFBOUT_MULT bound to: 10 - type: integer 
+	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT0_DIVIDE bound to: 15 - type: integer 
+	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT0_FRAC bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT2_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT2_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT3_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT3_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT4_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT4_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT5_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT5_DUTY bound to: 50000 - type: integer 
+	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
+	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[63]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[62]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[61]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[60]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[59]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[58]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[57]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[56]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[55]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[54]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[53]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[52]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[51]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[50]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[49]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[48]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[47]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[46]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[45]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[44]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[43]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[42]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[41]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[40]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[39]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[38]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[37]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[36]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[35]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[34]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[33]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[32]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[31]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[30]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[29]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[28]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[27]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[26]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[25]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[24]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[23]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[22]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[21]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[20]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[19]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[18]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[17]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[16]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[15]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[14]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[13]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[12]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[11]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[10]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[9]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[8]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[7]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[6]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[5]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[4]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[3]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[2]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[1]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'ram[0]' is not inferred as ram due to incorrect usage [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'ebaz4205_clk_wiz_0_0_mmcm_drp' (9#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_mmcm_pll_drp.v:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_mon_error_reg_sig_reg was removed.  [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:511]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_clk_wiz_drp' (10#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_clk_wiz_0_0_soft_reset' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:142]
+	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
+	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_soft_reset' (11#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ebaz4205_clk_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_clk_wiz_0_0_axi_clk_config' (12#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_axi_clk_config.vhd:177]
+INFO: [Synth 8-6155] done synthesizing module 'ebaz4205_clk_wiz_0_0' (13#1) [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.v:70]
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[0] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module ebaz4205_clk_wiz_0_0_soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[5] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[6] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_RdCE[7] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[0] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[5] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[6] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_WrCE[7] in module ebaz4205_clk_wiz_0_0_clk_wiz_drp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module ebaz4205_clk_wiz_0_0_pselect_f__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module ebaz4205_clk_wiz_0_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module ebaz4205_clk_wiz_0_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module ebaz4205_clk_wiz_0_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module ebaz4205_clk_wiz_0_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module ebaz4205_clk_wiz_0_0_pselect_f is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module ebaz4205_clk_wiz_0_0_address_decoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1419.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1419.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ebaz4205_clk_wiz_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ebaz4205_clk_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1480.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1481.734 ; gain = 0.848
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ebaz4205_clk_wiz_0_0_slave_attachment'
+WARNING: [Synth 8-3936] Found unconnected internal register 'clkout0_reg_reg' and it is trimmed from '32' to '18' bits. [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:419]
+WARNING: [Synth 8-3936] Found unconnected internal register 'clkfbout_reg_reg' and it is trimmed from '32' to '26' bits. [d:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_clk_wiz_drp.vhd:416]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ebaz4205_clk_wiz_0_0_slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   4 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 10    
+	   3 Input    6 Bit       Adders := 13    
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               39 Bit    Registers := 26    
+	               32 Bit    Registers := 34    
+	               26 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 42    
++---Multipliers : 
+	               4x32  Multipliers := 1     
+	               6x32  Multipliers := 1     
++---Muxes : 
+	   3 Input   39 Bit        Muxes := 6     
+	   2 Input   39 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 4     
+	   7 Input   32 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 9     
+	  10 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 27    
+	  10 Input    6 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 123   
+	   5 Input    1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1481.734 ; gain = 62.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1526.387 ; gain = 107.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    32|
+|3     |LUT1       |     3|
+|4     |LUT2       |   178|
+|5     |LUT3       |   171|
+|6     |LUT4       |    79|
+|7     |LUT5       |   160|
+|8     |LUT6       |   687|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |   152|
+|11    |MUXF8      |     2|
+|12    |FDRE       |  1427|
+|13    |FDSE       |    61|
+|14    |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 1542.930 ; gain = 61.195
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1542.930 ; gain = 123.773
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1542.930 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 187 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1549.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5edde0e1
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 123 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1549.453 ; gain = 130.297
+INFO: [Common 17-1381] The checkpoint 'D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/ebaz4205_clk_wiz_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/EBAZ4205_eth_ps2mouse/EBAZ4205_eth_ps2mouse.runs/ebaz4205_clk_wiz_0_0_synth_1/ebaz4205_clk_wiz_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ebaz4205_clk_wiz_0_0_utilization_synth.rpt -pb ebaz4205_clk_wiz_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 24 09:56:55 2023...
