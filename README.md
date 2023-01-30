@@ -4,7 +4,7 @@
 
 This repository contains the Vivado project, the PetaLinux project, and the Vitis software projects (both Standalone and Linux) to implement the EBAZ4205 board with a PS/2 mouse, to be used with the X11 grpahic library and/or with any graphic destop running on the Zynq-7010 CPU (e.g. Matchbox). 
 
-![](./docs/EBAZ4205-HDMI.png)
+![](./docs/PS2%20mouse%20Block%20Diagram.png)
 
 The result will be an EBAZ4205:
 * loading from the SD Card
