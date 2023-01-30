@@ -22,6 +22,7 @@ The result will be an EBAZ4205:
 ## Hardware Requirements
 
 * EBAZ4205 (with or without 25MHz crystal)
+*  PS/2 wired Mouse, possibly with the wheel (IntelliMouse) 
 * HDMI cable
 
 See:
